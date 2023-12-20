@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0"
+  },
+  "name": "tasksphere",
+  "description": "TaskSphere is an open-source task management system for streamlined project organization. It offers an intuitive interface, collaborative workspaces, and deadline tracking for effective task management.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon your-server-file.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
