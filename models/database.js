@@ -1,7 +1,10 @@
-// database.js
+require('dotenv').config(); // Load environment variables from .env file
+
 const { MongoClient } = require('mongodb');
 
-const uri = "mongodb+srv://IfraShaikh:jobs%405858@cluster0.odalvo5.mongodb.net/test?retryWrites=true&w=majority";
+// Use environment variable for MongoDB URI
+const uri = process.env.MONGO_URI;
+
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const connectDB = async () => {
