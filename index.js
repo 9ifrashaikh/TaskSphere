@@ -1,11 +1,11 @@
-// index.js (or app.js)
+
 const express = require('express');
 const app = express();
 const path = require('path');
-//const router = require('./Routers/Router');  
+
 const Router = require('./Routers/Router');
 
-const { connectDB } = require('./models/database');  // Import the connectDB function
+const { connectDB } = require('./models/database');  
 
 // Connect to MongoDB
 connectDB();
@@ -14,7 +14,7 @@ connectDB();
 app.set('view engine', 'ejs');
 
 // Set the 'views' directory
-app.set('views', path.join(__dirname, '..', 'views'));
+app.set('views', path.join(__dirname, 'views'));
 
 // Use the router for handling routes
 app.use('/', Router);

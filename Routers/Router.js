@@ -1,9 +1,9 @@
 const express = require('express');
-const router = express.Router();
-//const { renderLandingPage } = require('./controllers/Controller'); // Import the controller function
+const Router = express.Router();
+
 const { renderLandingPage }  = require('../controllers/Controller');
 
 // Landing page route
-router.get('/', renderLandingPage); // Using the controller function to handle the route
+Router.get('/', renderLandingPage); // Using the controller function to handle the route
 
-module.exports = router;
+module.exports =    Router;
